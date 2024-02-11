@@ -318,6 +318,102 @@ body {
     flex: 100%;
   }
 }
+/*------------------contact-form-------------------*/
+.contact-form__contant {
+  margin-top: 20px;
+}
+.contact-form__form-body {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+  background: #e6f4fd;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.form-contant__header {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #2e2d2d;
+  font-size: 20px;
+  text-align: center;
+}
+@media (max-width: 424.98px) {
+  .form-contant__header {
+    margin-bottom: 25px;
+  }
+}
+.form-contant__name {
+  display: block;
+  width: 96%;
+  height: 38px;
+  padding: 8px 12px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 142.8571428571%;
+  color: #333;
+  vertical-align: middle;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+.form-contant__phone {
+  display: block;
+  width: 96%;
+  height: 38px;
+  padding: 8px 12px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 142.8571428571%;
+  color: #333;
+  vertical-align: middle;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+.form-contant__phone::-webkit-outer-spin-button, .form-contant__phone::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.form-contant__phone, .form-contant__phone:hover, .form-contant__phone:focus {
+  -webkit-appearance: none;
+          appearance: none;
+  -moz-appearance: textfield;
+}
+.form-contant__opisanie {
+  display: block;
+  width: 96%;
+  height: 75px;
+  padding: 8px 12px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 142.8571428571%;
+  color: #333;
+  vertical-align: middle;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  resize: none;
+}
+.form-contant__button {
+  display: inline-block;
+  padding: 9px 15px;
+  color: #000;
+  border: 0;
+  line-height: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 0;
+  margin-bottom: 15px;
+  width: 96%;
+  background-image: linear-gradient(180deg, #9ce9ea, #9ce9ea);
+  box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.1);
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+.form-contant__button:hover {
+  color: #fff;
+}
+
 /*------------------bulk-cargo-------------------*/
 .bulk-cargo__content {
   display: flex;
