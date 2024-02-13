@@ -67,6 +67,7 @@
 
 // отправка формы
 
+const popupThankyou = document.querySelector('.popup-thankyou');
 $('.form-contant').on('submit', function (event) {
 
   event.stopPropagation();
@@ -137,30 +138,30 @@ $('.form-contant').on('submit', function (event) {
   return false;
 });
 
-// закрытие popup-thankyou
+закрытие popup - thankyou
 
-// const closeButtonThankyou = document.querySelector('.popup-thankyou__close');
-// if (closeButton) {
-//   closeButtonThankyou.addEventListener('click', function () {
-//     popupThankyou.classList.add("popup-thankyou_disable");
-//     document.body.classList.remove('body_lock')
-//   });
-// }
+const closeButtonThankyou = document.querySelector('.popup-thankyou__close');
+if (closeButton) {
+  closeButtonThankyou.addEventListener('click', function () {
+    popupThankyou.classList.add("popup-thankyou_disable");
+    document.body.classList.remove('body_lock')
+  });
+}
 
-// popupThankyou.addEventListener('click',function(e){
-//   if (!e.target.closest('.popup-thankyou__content')) {
-//     popupThankyou.classList.add("popup-thankyou_disable");
-//     document.body.classList.remove('body_lock');
-//   }
-// })
+popupThankyou.addEventListener('click', function (e) {
+  if (!e.target.closest('.popup-thankyou__content')) {
+    popupThankyou.classList.add("popup-thankyou_disable");
+    document.body.classList.remove('body_lock');
+  }
+})
 
 // провнрка на нажатие кнопки "Esc" у нее код 27
-// document.addEventListener('keydown',function(e){
-//   if (e.which===27) {
-//     popupThankyou.classList.add("popup-thankyou_disable");
-//     document.body.classList.remove('body_lock');
-//   }
-// })
+document.addEventListener('keydown', function (e) {
+  if (e.which === 27) {
+    popupThankyou.classList.add("popup-thankyou_disable");
+    document.body.classList.remove('body_lock');
+  }
+})
 
 
 // конец скрипта отправки формы
