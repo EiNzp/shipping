@@ -132,16 +132,18 @@ $('.form-contant').on('submit', function (event) {
       $('#formContantSubmit').removeAttr('disabled');
       // popupForm.classList.add("popup-form_disable");
       popupThankyou.classList.remove("popup-thankyou_disable");
+
+      document.body.classList.add('body_lock');
     }
   });
 
   return false;
 });
 
-закрытие popup - thankyou
+// закрытие popup - thankyou
 
 const closeButtonThankyou = document.querySelector('.popup-thankyou__close');
-if (closeButton) {
+if (closeButtonThankyou) {
   closeButtonThankyou.addEventListener('click', function () {
     popupThankyou.classList.add("popup-thankyou_disable");
     document.body.classList.remove('body_lock')

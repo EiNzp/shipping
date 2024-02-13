@@ -101,6 +101,10 @@ body {
 }
 
 /*------------------HEADER-------------------*/
+.body_lock {
+  overflow: hidden;
+}
+
 /*------------------first-block-------------------*/
 .main-content__first-block {
   margin-bottom: 20px;
